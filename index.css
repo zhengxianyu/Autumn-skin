@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #3aa6ef;
+  background: #FFEC8B;
 }
 
 .sky {
@@ -20,7 +20,7 @@ body {
   position: absolute;
   height: 2vw;
   width: 100vw;
-  background: #87CEFA;
+  background: #EEDC82;
 }
 
 .sky-two {
@@ -28,15 +28,7 @@ body {
   top:  2vw;
   height: 4vw;
   width: 100vw;
-  background: #7EC0EE;
-}
-
-.sky-three {
-  position: absolute;
-  top:  6vw;
-  height: 6vw;
-  width: 100vw;
-  background: #5CACEE;
+  background: #F0E68C;
 }
 
 .cloud-one, .cloud-two, .cloud-three {
@@ -66,7 +58,7 @@ body {
 }
 
 .cloud-one, .cloud-one::before {
-  background: #B0E2FF;
+  background: #FFFFE0;
 }
 
 .cloud-two {
@@ -76,7 +68,7 @@ body {
 }
 
 .cloud-two, .cloud-two::before {
-  background: #ebfbfe;
+  background: #FFFFE0;
 }
 
 .cloud-three {
