@@ -20,7 +20,7 @@ body {
   position: absolute;
   height: 2vw;
   width: 100vw;
-  background: #7EC0EE;
+  background: #87CEFA;
 }
 
 .sky-two {
@@ -28,7 +28,7 @@ body {
   top:  2vw;
   height: 4vw;
   width: 100vw;
-  background: #87CEFA;
+  background: #7EC0EE;
 }
 
 .sky-three {
@@ -147,18 +147,18 @@ body {
 	}
 }
 
-.leaf:first-child {
+.leafs .leaf:first-child {
   transform: rotate(10deg);
   animation: Leafmove 5s linear infinite;
 }
 
-.leaf:nth-child(2) {
+.leafs .leaf:nth-child(2) {
   left: 7em;
   transform: rotate(60deg);
   animation: Leafmove 6s linear infinite;
 }
 
-.leaf:nth-child(3) {
+.leafs .leaf:nth-child(3) {
   left: 11em;
   transform: rotate(30deg);
   animation: Leafmove 7s linear infinite;
