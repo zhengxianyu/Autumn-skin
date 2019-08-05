@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+}
+
+.autumn-body {
+  position: fixed;
+  /* width: 15vw; */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #3aa6ef;
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+}
+
+.sky-one {
+  position: absolute;
+  height: 2vw;
+  width: 100vw;
+  background: #7EC0EE;
+}
+
+.sky-two {
+  position: absolute;
+  top:  2vw;
+  height: 4vw;
+  width: 100vw;
+  background: #87CEFA;
+}
+
+.sky-three {
+  position: absolute;
+  top:  6vw;
+  height: 6vw;
+  width: 100vw;
+  background: #5CACEE;
+}
+
+.cloud-one, .cloud-two, .cloud-three {
+  background: #fff;
+  width: 5vw;
+  height: 2vw;
+  border-radius: 50px;
+  position: absolute;
+  top: 3vw;
+  animation: FlyMove 35s linear infinite;
+}
+
+.cloud-three {
+  animation: FlyMove 38s linear infinite;
+}
+
+.cloud-one::before, .cloud-two:before, .cloud-three:before {
+  background: #fff;
+  content: "";
+  width: 3vw;
+  height: 1.3vw;
+  position: absolute;
+  top: -1vw;
+  left: 0.7vw;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+
+.cloud-one, .cloud-one::before {
+  background: #B0E2FF;
+}
+
+.cloud-two {
+  top: 5vw;
+  left: 10vw;
+  animation: FlyMove 37s linear infinite;
+}
+
+.cloud-two, .cloud-two::before {
+  background: #ebfbfe;
+}
+
+.cloud-three {
+  top: 9vw;
+  left: 5vw;
+}
+
+.tree {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(4deg);
+}
+
+.branch-left, .branch-right {
+  position: absolute;
+  height: 1vw;
+  width: 2vw;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 2px;
+  background: black;
+  bottom: 0;
+  transform: rotate(7deg);
+}
+
+.branch-right {
+  border-top-right-radius: 19px;
+  border-bottom-left-radius: 18px;
+  transform: rotate(-7deg);
+}
+
+.leaf {
+  width: 1vw;
+  height: 1vw;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  background: orange;
+  position: absolute;
+  bottom: 16.3em;
+  left: 9em;
+}
+
+@keyframes FlyMove {
+  from {
+    transform: translateX(-15vw);
+	}
+	to {
+    transform: translateX(100vw);
+	}
+}
+
+@keyframes Leafmove {
+  0% {
+    transform: translateX(7em);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(5em) translateY(5em);
+    opacity: 0.7;
+  }
+  60% {
+    transform: translateX(7em) translateY(10em);
+    opacity: 0.4;
+  }
+	100% {
+    transform: translateX(9em) translateY(15em);
+    opacity: 0;
+	}
+}
+
+.leaf:first-child {
+  transform: rotate(10deg);
+  animation: Leafmove 5s linear infinite;
+}
+
+.leaf:nth-child(2) {
+  left: 7em;
+  transform: rotate(60deg);
+  animation: Leafmove 6s linear infinite;
+}
+
+.leaf:nth-child(3) {
+  left: 11em;
+  transform: rotate(30deg);
+  animation: Leafmove 7s linear infinite;
+}
+
+.land {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2vw;
+  background: #f6b754;
+}
